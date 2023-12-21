@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>WORKMEET-your one stop shop</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../../static/root/assets/img/favicon.png" rel="icon">
+  <link href="../../static/root/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../../static/root/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../../static/root/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../static/root/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../../static/root/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../../static/root/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../../static/root/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../../static/root/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Reveal
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">get2mena@gmail.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+2348068611332</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section><!-- End Top Bar-->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div id="logo">
+        <h1><a href="index.html">WORK<span>MEET</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="../../static/root/assets/img/main-logo.png" alt="workmeetLogo"></a> -->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio2">Find Work</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Find Talent</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <li><button><a href="{{url_for('register_page')}}">Sign Up</button></li>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= hero Section ======= -->
+  <section id="hero">
+
+    <div class="hero-content" data-aos="fade-up">
+      <h2>A One Stop Shop <span>For Your</span><br>IT Freelancer</h2>
+      <div>
+        <a href="#portfolio2" class="btn-findwork scrollto">Find Work</a>
+        <a href="#portfolio" class="btn-findtalent scrollto">Find Talent</a>
+      </div>
+    </div>
+
+    <div class="hero-slider swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url('../../static/root/assets/img/hero-carousel/caro1.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('../../static/root/assets/img/hero-carousel/caro2.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('../../static/root/assets/img/hero-carousel/caro3.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('../../static/root/assets/img/hero-carousel/caro4.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('../../static/root/assets/img/hero-carousel/caro5.jpg');"></div>
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6 about-img">
+            <img src="../../static/root/assets/img/about.jpg" alt="">
+          </div>
+
+          <div class="col-lg-6 content">
+            <h2>With Us,Be Assured To Get The Best Jobs And Find The Best Talents</h2>
+            <h3>At Workmeet, we are committed to empowering young and dynamic IT freelancers by 
+               providing a platform where they can register their presence,hone their skills
+              and earn a living.
+            </h3>
+
+            <ul>
+              <li><i class="bi bi-check-circle"></i> We aim at bridging the gap between IT Freelancers and Employers of labour, thereby helping both parties find their perfect match for their short-term purposes.</li>
+              <li><i class="bi bi-check-circle"></i> Hire independent professionals to shorten development cycles, bury backlogs, and drive product growth</li>
+              <li><i class="bi bi-check-circle"></i> Connect with talent that gets you, and hire them to take your business to the next level.</li>
+              <li><i class="bi bi-check-circle"></i> We offer flexibilty to work on projects that fit your schedule .</li>
+          
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Services</h2>
+          <p>We at WORKMEET intends to help companies to get a better network of talents by getting the best jobs and finding the best talents.</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <div class="icon"><i class="bi bi-binoculars"></i></div>
+              <h4 class="title"><a href="">IT FREELANCING</a></h4>
+              <p class="description">specialize in one or more areas of IT based on expertise and client demands. Work independently or as part of a virtual team and can take on short-term or long-term projects based on client needs.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="box">
+              <div class="icon"><i class="bi bi-card-checklist"></i></div>
+              <h4 class="title"><a href="">CLIENT HIRING FOR A PROJECT</a></h4>
+              <p class="description">Hire freelancers or contractors for a project. Seek expertise and assistance in a specific area of work and ensure a smooth and successful collaboration. </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <div class="icon"><i class="bi bi-bar-chart"></i></div>
+              <h4 class="title"><a href="">AI SERVICES</a></h4>
+              <p class="description">Get access to artificial intelligence-related capabilities and functionalities to perform various tasks, automate processes, and derive insights from data.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <div class="icon"><i class="bi bi-briefcase"></i></div>
+              <h4 class="title"><a href="">HR & TRAINING</a></h4>
+              <p class="description">Manage and Develop your Workforce by building a skilled, engaged, and motivated workforce to continously meet organizational goals.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+
+    <!-- ======= Find Work Section ======= -->
+
+    <section id="portfolio2" class="portfolio2">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Find Work</h2>
+          <p>Explore the list of our Available Work Opportunities</p>
+        </div>
+
+        <div class="row2">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+             <div class="portfolio-info2">
+              <h4>Mobile App Developers</h4>
+              <p>Coming Soon</p>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-info2">
+              <h4>UI/UX Designer</h4>
+              <p>Coming Soon</p>
+               </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+             <div class="portfolio-info2">
+              <h4>Web App Developers</h4>
+              <p>Coming Soon </p>
+               </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+               <div class="portfolio-info2">
+              <h4>Digital Marketing</h4>
+              <p>Coming Soon</p>
+             </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+             <div class="portfolio-info2">
+              <h4>Graphic Design, Web Design and Development</h4>
+              <p>Coming Soon</p>
+               </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-info2">
+              <h4>Game App Developers</h4>
+              <p>Coming Soon</p>
+                </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+           <div class="portfolio-info2">
+              <h4>Data Entry and Analysis</h4>
+              <p>Coming Soon</p>
+               </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-info2">
+              <h4>Cybersecurity</h4>
+              <p>Coming Soon</p>
+                </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-info2">
+              <h4>Quality Assurance (QA) and Testing</h4>
+              <p>Coming Soon</p>
+                </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-info2">
+              <h4>Database Administration</h4>
+              <p>Coming Soon</p>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-info2">
+              <h4>Content Management</h4>
+              <p>Coming Soon</p>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-info2">
+              <h4>Machine Learning and Data Science</h4>
+              <p>Coming Soon</p>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Find Work Section -->
+
+
+   
+    <!-- ======= Find Talent Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Find Talent</h2>
+          <p>Explore the list of our suitable IT Freelancers</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Others</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="../../static/root/assets/img/portfolio/mobapp.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Mobile App Developers</h4>
+              <p>IT Freelancer</p>
+              <a href="{{url_for('register_page')}}" class="details-link" title="Apply"><i class="bx bx-link"></i></a>
+
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="../../static/root/assets/img/portfolio/uiux.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>UI/UX Designer</h4>
+              <p>IT Freelancer</p>
+              <a href="{{url_for('register_page')}}" class="details-link" title="Apply"><i class="bx bx-link"></i></a>
+                </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="../../static/root/assets/img/portfolio/web.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web App Developers</h4>
+              <p>IT Freelancer</p>
+              <a href="{{url_for('register_page')}}" class="details-link" title="Apply"><i class="bx bx-link"></i></a>
+             </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="../../static/root/assets/img/portfolio/digmkt.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Digital Marketing</h4>
+              <p>IT Freelancer</p>
+              <a href="{{url_for('register_page')}}" class="details-link" title="Apply"><i class="bx bx-link"></i></a>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="../../static/root/assets/img/portfolio/web1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Graphic Design, Web Design and Development</h4>
+              <p>IT Freelancer</p>
+              <a href="{{url_for('register_page')}}" class="details-link" title="Apply"><i class="bx bx-link"></i></a>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="../../static/root/assets/img/game.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Game App Developers</h4>
+              <p>IT Freelancer</p>
+              <a href="{{url_for('register_page')}}" class="details-link" title="Apply"><i class="bx bx-link"></i></a>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="../../static/root/assets/img/portfolio/other.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Data Entry and Analysis</h4>
+              <p>IT Freelancer</p>
+              <a href="{{url_for('register_page')}}" class="details-link" title="Apply"><i class="bx bx-link"></i></a>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="../../static/root/assets/img/portfolio/other2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Cybersecurity</h4>
+              <p>IT Freelancer</p>
+              <a href="{{url_for('register_page')}}" class="details-link" title="Apply"><i class="bx bx-link"></i></a>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="../../static/root/assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Quality Assurance (QA) and Testing</h4>
+              <p>IT Freelancer</p>
+              <a href="{{url_for('register_page')}}" class="details-link" title="Apply"><i class="bx bx-link"></i></a>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="../../static/root/assets/img/portfolio/other3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Database Administration</h4>
+              <p>IT Freelancer</p>
+              <a href="../../static/root/assets/img/portfolio/other3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"></a>"
+              <a href="{{url_for('register_page')}}" class="details-link" title="Apply"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="../../static/root/assets/img/portfolio/other4.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Content Management</h4>
+              <p>IT Freelancer</p>
+              <a href="../../static/root/assets/img/portfolio/other4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"></a>
+              <a href="{{url_for('register_page')}}" class="details-link" title="Apply"><i class="bx bx-link"></i></a>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="../../static/root/assets/img/portfolio/ml.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Machine Learning and Data Science</h4>
+              <p>IT Freelancer</p>
+              <a href="../../static/root/assets/img/portfolio/ml.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"></a>
+              <a href="{{url_for('register_page')}}" class="details-link" title="Apply"><i class="bx bx-link"></i></a>
+             
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+   
+    <!-- ======= Team Section ======= -->
+    <section id="team">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>My Team</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="../../static/root/assets/img/background.jpg" alt=""></div>
+              <div class="details">
+                <h4>Omena Egbusiri</h4>
+                <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <p>We are always available...Kindly reach us via the below details</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Address</h3>
+              <address># 9 South-Gate Estate, Boskel Road, Port Harcourt, Rivers State</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="bi bi-phone"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+155895548855">+234 8068611332</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="bi bi-envelope"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@example.com">get2mena@gmail.com</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>WORKMEET</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Reveal
+      -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../../static/root/assets/vendor/aos/aos.js"></script>
+  <script src="../../static/root/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../static/root/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../../static/root/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../../static/root/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../../static/root/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../../static/root/assets/js/main.js"></script>
+
+</body>
+
+</html>
