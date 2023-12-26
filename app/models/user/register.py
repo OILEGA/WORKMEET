@@ -4,7 +4,7 @@ class Registration(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     first_name = db.Column(db.String(100), nullable=False)
     last_name = db.Column(db.String(100), nullable=False)
-    email = db.Column(db.String(100), unique=True, nullable=False)
+    email = db.Column(db.String(100),unique=True, nullable=False)
     contact_num = db.Column(db.String(20), nullable=False)
     country_of_residence = db.Column(db.String(100), nullable=False)
     date_of_birth = db.Column(db.Date, nullable=False)

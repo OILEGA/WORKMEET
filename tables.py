@@ -4,10 +4,9 @@ import mysql.connector
 connection = mysql.connector.connect(
         host= 'localhost',
         user= 'root',
-        passwd= 'Dilegs',
-        database= 'workmeet_reg'
+        passwd='Dilegs',
+        database= 'registration'
         )
-
 cursor= connection.cursor()
 
 cursor.execute('SHOW TABLES')
@@ -18,4 +17,3 @@ for table in tables:
 
 cursor.close()
 connection.close()
-

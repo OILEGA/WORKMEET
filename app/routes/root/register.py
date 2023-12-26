@@ -9,7 +9,7 @@ def register_page():
         form_data = request.form
 
         #creating a registration object to add to the database
-        workmeet_reg = Registration(
+        registration = Registration(
             first_name=form_data['first_name'],
             last_name=form_data['last_name'],
             email=form_data['email'],
@@ -21,7 +21,7 @@ def register_page():
             programming_skills_acquired=form_data['skill_acquired'],
             years_of_experience=form_data['experience']
         )
-        db.session.add(workmeet_reg)
+        db.session.add(registration)
         db.session.commit()
 
         flash('You have successfully registered as an IT Freelancer', 'success')
@@ -30,9 +30,9 @@ def register_page():
         return redirect(url_for('user_inputs'))
     return render_template('root/register.html')
 
-    @app.route('/user_inputs')
-    def user_inputs():
-        #Display all user inputs from the database
-        registrations = Registration.query.all()
+@app.route('/user_inputs')
+def user_inputs():
+    #Display all user inputs from the database
+    registrations = Registration.query.all()
 
-        return render_template('root/user_inputs.html', registrations=registrations)
+    return render_template('root/user_inputs.html', registrations=registrations)
