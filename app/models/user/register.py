@@ -23,7 +23,11 @@ class Registration(db.Model):
 
 #generate a 4 digits unique code
     def generate_unique_code(self):
-        code = ''.join(random.choice(string.digits, k=4))
+        code = ''.join(random.choices(string.digits, k=4))
+
+        #checking if the code is unique
+        while Registration.query.filter_by(unique_code.code).first() is not None:
+            code = ''.join(random.choices(string.digits, k=4))
         self.unique_code = code
 
 
