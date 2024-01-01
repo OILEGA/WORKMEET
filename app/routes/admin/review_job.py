@@ -38,6 +38,5 @@ def review_job():
     if existing_it_freelancing:
         return render_template('admin/review_job.html', existing_it_freelancing=existing_it_freelancing)
     else:
-        flash('IT Freelancing or Job Not Found', 'danger')
-
-        return render_template('admin/review_job.html')
+        flash('IT Freelancing Not Found', 'danger')
+        return redirect(url_for('dashboard'))

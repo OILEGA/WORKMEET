@@ -1,5 +1,6 @@
 from app import db
-import random,string
+import random
+import string
 
 class Registration(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -26,7 +27,7 @@ class Registration(db.Model):
         code = ''.join(random.choices(string.digits, k=4))
 
         #checking if the code is unique
-        while Registration.query.filter_by(unique_code.code).first() is not None:
+        while Registration.query.filter_by(unique_code=self.unique_code).first() is not None:
             code = ''.join(random.choices(string.digits, k=4))
         self.unique_code = code
 

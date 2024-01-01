@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Workmeet Admin</title>
-    <meta name="description" content="Ela Admin - HTML5 Admin Template">
+    <meta name="description" content="Workmeet Admin">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="https://i.imgur.com/QRAUqs9.png">
@@ -69,19 +69,19 @@
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href=""><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
+                        <a href="{{ url_for('dashboard') }}"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
                     </li>
                 
                     <li class="menu-title">IT Freelancing</li>
 
                     <li>
-                        <a href=""> <i class="menu-icon fa fa-bar-chart"></i>Modify User Acounts </a>
+                        <a href="{{ url_for('modify_useracct') }}"> <i class="menu-icon fa fa-bar-chart"></i>Modify User Acounts </a>
                     </li>
 
                     <li>
                        {% if existing_it_freelancing %}
 
-                            <a href="{{ url_for('review_job',it_freelancing_id=existing_it_freelancing.id)}}">
+                            <a href="{{ url_for('review_job', it_freelancing_id=existing_it_freelancing.id)}}">
                             <i class="menu-icon ti-email"></i> Review Job Listings
                             </a>
                             {% else %}
@@ -325,12 +325,12 @@
                                                 {% for registration in registrations %}
                                                 <tr>
                                                     <td class="serial">{{ loop.index}}.</td>
-                                                    <td>{{ registration.Unique_code}}</td>
+                                                    <td>{{ registration.unique_code}}</td>
                                                     <td>{{ registration.first_name}} {{ registration.last_name}}</td>
                                                     <td>{{ registration.email}}</td>
                                                     <td>{{ registration.contact_num}}</td>
                                                     <td>{{registration.area_of_specialization}}</td>
-                                                    <td>{{registration.number_of_users}}</td>
+                                                    <td>{{registration.number_of_user}}</td>
                                                     <td class="badge badge-complete">{{ registration.job_type}}</td>
                                                 </tr>
                                                 {% endfor %}
