@@ -397,6 +397,26 @@ h6 {
   display: block;
 }
 
+.nav-items{
+  display:flex;
+  gap:var(--size-4xl);
+  padding:10px;
+  margin: 5px;
+  justify-content:space-between;
+}
+.nav-btn1{
+  border:none;
+  color:white;
+  border:1px solid black;
+  border-radius: 6px;
+
+}
+.nav-btn2{
+  color:white;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/

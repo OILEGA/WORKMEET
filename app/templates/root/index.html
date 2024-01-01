@@ -74,8 +74,13 @@
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
 
-        <li><button><a href="{{url_for('login_page')}}">Login</button></li>
-        <li><button><a href="{{url_for('register_page')}}">Sign Up</button></li><i class="bi bi-list mobile-nav-toggle"></i>
+        <div class="nav-items">
+          <button class="nav-btn1"><a href="{{url_for('login_page')}}">Login</button>
+          <button class="nav-btn2"><a href="{{url_for('register_page')}}">Sign Up</button><i class="bi bi-list mobile-nav-toggle"></i>
+    </div>
+
+        <!-- <li><button><a href="{{url_for('login_page')}}">Login</button></li> -->
+        <!-- <li><button><a href="{{url_for('register_page')}}">Sign Up</button></li><i class="bi bi-list mobile-nav-toggle"></i> -->
       </nav><!-- .navbar -->
 
     </div>

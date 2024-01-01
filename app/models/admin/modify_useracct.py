@@ -7,3 +7,4 @@ class IT_Freelancing(db.Model):
     birth_date = db.Column(db.DateTime, nullable=False)
     skill_acquired = db.Column(db.String(100), nullable=False)
     experience = db.Column(db.String(100), nullable=False)
+    total_users = db.Column(db.Integer, nullable=False)

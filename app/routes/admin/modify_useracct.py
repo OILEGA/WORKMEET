@@ -13,6 +13,7 @@ def modify_useracct():
         birth_date = datetime.strptime(request.form.get('birth_date'), '%Y-%m-%d')
         skill_acquired = request.form.get('skill_acquired')
         experience = request.form.get('experience')
+        total_users = int(request.form.get('total_users'))
 
         #checking if an IT Freelancing already exist
         existing_it_freelancing = IT_Freelancing.query.first()
@@ -23,6 +24,7 @@ def modify_useracct():
             existing_it_freelancing.birth_date = birth_date
             existing_it_freelancing.skill_acquired = skill_acquired
             existing_it_freelancing.experience = experience
+            exisiting_it_freelancing.total_users = total_users
 
         else:
             #create a new IT Freelancing to the database
@@ -30,7 +32,8 @@ def modify_useracct():
                 area_of_specialization=area_of_specialization,
                 birth_date=birth_date,
                 skill_acquired=skill_acquired,
-                experience=experience
+                experience=experience,
+                total_users=total_users,
 
             )
             db.session.add(new_it_freelancing)

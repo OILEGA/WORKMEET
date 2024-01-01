@@ -79,10 +79,14 @@
                     </li>
 
                     <li>
-                       
-                        <a href="">
+                       {% if existing_it_freelancing %}
+
+                            <a href="{{ url_for('review_job',it_freelancing_id=existing_it_freelancing.id)}}">
                             <i class="menu-icon ti-email"></i> Review Job Listings
-                        </a>
+                            </a>
+                            {% else %}
+                               
+                            {% endif %}
         
                 
                     </li>
@@ -243,7 +247,7 @@
                                     </div>
                                     <div class="stat-content">
                                         <div class="text-left dib">
-                                            <div class="stat-text"><span class="count">1000</span></div>
+                                            <div class="stat-text"><span class="count">{{total_users}}</span></div>
                                             <div class="stat-heading">Total Number Of Users</div>
                                         </div>
                                     </div>
@@ -261,7 +265,7 @@
                                     </div>
                                     <div class="stat-content">
                                         <div class="text-left dib">
-                                            <div class="stat-text"><span class="count">1000</span></div>
+                                            <div class="stat-text"><span class="count">{{job_postings}}</span></div>
                                             <div class="stat-heading">Job Postings</div>
                                         </div>
                                     </div>
@@ -279,7 +283,7 @@
                                     </div>
                                     <div class="stat-content">
                                         <div class="text-left dib">
-                                            <div class="stat-text"><span class="count">1000</span></div>
+                                            <div class="stat-text"><span class="count">{{it_freelancing}}</span></div>
                                             <div class="stat-heading">IT Freelancers</div>
                                         </div>
                                     </div>
@@ -312,20 +316,25 @@
                                                     <th>Email</th>
                                                     <th>Contact Num</th>
                                                     <th>Area of Specialization</th>
+                                                    <th>Number of Users</th>
                                                     <th>Job type</th>
+                                
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                               
-                                                    <tr>
-                                                        <td class="serial">1</td>
-                                                        <td>1234</td>
-                                                        <td>Success ICT</td>
-                                                        <td>chineduegbusiri@gmail.com</td>
-                                                        <td>07038104454</td>
-                                                        <td>UX/UI Design</td>
-                                                        <td class="badge badge-complete">Full time</td>
-                                                    </tr>
+                                                {% for registration in registrations %}
+                                                <tr>
+                                                    <td class="serial">{{ loop.index}}.</td>
+                                                    <td>{{ registration.Unique_code}}</td>
+                                                    <td>{{ registration.first_name}} {{ registration.last_name}}</td>
+                                                    <td>{{ registration.email}}</td>
+                                                    <td>{{ registration.contact_num}}</td>
+                                                    <td>{{registration.area_of_specialization}}</td>
+                                                    <td>{{registration.number_of_users}}</td>
+                                                    <td class="badge badge-complete">{{ registration.job_type}}</td>
+                                                </tr>
+                                                {% endfor %}
+
                                              
                                             </tbody>
                                         </table>

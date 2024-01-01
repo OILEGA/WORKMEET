@@ -1,6 +1,8 @@
 from app import app, db
 from flask import render_template, request, flash, redirect, url_for
 from app.models.user import Registration
+from app.models.admin import IT_Freelancing
+
 
 @app.route('/register', methods=['GET', 'POST'])
 def register_page():
@@ -16,6 +18,7 @@ def register_page():
             contact_num=form_data['contact_num'],
             country_of_residence=form_data['country_of_residence'],
             date_of_birth=form_data['birth_date'],
+            number_of_users=form_data['number_of_users'],
             freelancer_job_category=form_data['job_type'],
             area_of_specialization=form_data['area_of_specialization'],
             programming_skills_acquired=form_data['skill_acquired'],

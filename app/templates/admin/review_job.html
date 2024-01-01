@@ -72,14 +72,14 @@
                         <a href="index.html"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
                     </li>
                 
-                    <li class="menu-title">Events</li><!-- /.menu-title -->
+                    <li class="menu-title">IT Freelancing</li><!-- /.menu-title -->
 
                     <li>
-                        <a href="widgets.html"> <i class="menu-icon fa fa-bar-chart"></i>Add Events </a>
+                        <a href="widgets.html"> <i class="menu-icon fa fa-bar-chart"></i>Modify User Accounts </a>
                     </li>
 
                     <li>
-                        <a href="widgets.html"> <i class="menu-icon ti-email"></i> Edit Events </a>
+                        <a href="widgets.html"> <i class="menu-icon ti-email"></i> Review Job Listings </a>
                     </li>
                  
 
@@ -205,27 +205,27 @@
         <form method="post">
             <div class="col-lg-12">
                 <div class="card">
-                    <div class="card-header"><strong>Edit Event Details</strong><small> Form</small></div>
+                    <div class="card-header"><strong>Review Job Listings</strong><small> Form</small></div>
                     <div class="form-group">
-                                <label for="event_name" class="form-control-label">Event Name</label>
-                                <input type="text" id="event_name" name="event_name" placeholder="Enter event name" class="form-control" required value="">
+                                <label for="area_of_specialization" class="form-control-label">Area of Specialization</label>
+                                <input type="text" id="area_of_specialization" name="area_of_specialization" placeholder="Enter area_of_specialization" class="form-control" required value="{{existing_it_freelancing.area_of_specialization}}">
                             </div>
                             <div class="form-group">
-                                <label for="event_date" class="form-control-label">Event Date</label>
-                                <input type="date" id="event_date" name="event_date" class="form-control" required value="">
+                                <label for="birth_date" class="form-control-label">Date of Birth</label>
+                                <input type="date" id="birth_date" name="birth_date" class="form-control" required value="{{existing_it_freelancing.birth_date.strftime('%Y-%m-%d')}}">
                             </div>
                             <div class="form-group">
-                                <label for="event_venue" class="form-control-label">Event Venue</label>
-                                <input type="text" id="event_venue" name="event_venue" placeholder="Enter event venue" class="form-control" required value="">
+                                <label for="skill_acquired" class="form-control-label">Programming Skills Acquired</label>
+                                <input type="text" id="skill_acquired" name="skill_acquired" placeholder="Enter Programming Skills Acquired" class="form-control" required value="{{existing_it_freelancing.skill_acquired}}">
                             </div>
                             <div class="form-group">
-                                <label for="eligibility" class="form-control-label">Eligibility</label>
-                                <input type="text" id="eligibility" name="eligibility" placeholder="Enter eligibility criteria" class="form-control" required value="">
+                                <label for="experience" class="form-control-label">Years of Experience</label>
+                                <input type="text" id="experience" name="experience" placeholder="Enter experience" class="form-control" required value="{{existing_it_freelancing.experience}}">
                             </div>
                           
                             <div class="form-group">
-                                <label for="total_tickets" class="form-control-label">Total Tickets</label>
-                                <input type="number" id="total_tickets" name="total_tickets" placeholder="Enter total tickets" class="form-control" required value="">
+                                <label for="total_users" class="form-control-label">Total Users</label>
+                                <input type="number" id="total_users" name="total_users" placeholder="Enter Total Users" class="form-control" required value="{{existing_it_freelancing.total_users}}">
                             </div>
                 
                             <!-- Your existing submit button -->
