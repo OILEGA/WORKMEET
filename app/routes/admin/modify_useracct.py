@@ -24,7 +24,7 @@ def modify_useracct():
             existing_it_freelancing.birth_date = birth_date
             existing_it_freelancing.skill_acquired = skill_acquired
             existing_it_freelancing.experience = experience
-            exisiting_it_freelancing.total_users = total_users
+            existing_it_freelancing.total_users = total_users
 
         else:
             #create a new IT Freelancing to the database
